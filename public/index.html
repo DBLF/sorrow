@@ -2,8 +2,38 @@
   <head>
     <title>Sorrow</title>
     <script type="text/javascript" src="js/polymaps.min.js"></script>
-  </head>
-  <body>
-  </body>
-</html>
+
+    <style type="text/css">
+
+@import url("css/base.css");
+
+#map {
+  background: #021019;
+}
+
+.compass .back {
+  fill: #256574;
+}
+
+.compass .fore, .compass .chevron {
+  stroke: #1AA398;
+}
+
+#copy, #copy a {
+  color: #1AA398;
+}
+
+    </style>
+    </head>
+    <body>
+    <script type="text/javascript">
+var po = org.polymaps;
+var map = po.map()
+  .container(document.body.appendChild(po.svg("svg")))
+  .add(po.image().url("images/sorrow.jpg"))
+.add(po.interact())
+  .add(po.compass());
+    </script>
+    </body>
+    </html>
 
