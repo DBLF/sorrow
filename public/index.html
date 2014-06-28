@@ -30,7 +30,8 @@
 var po = org.polymaps;
 var map = po.map()
   .container(document.body.appendChild(po.svg("svg")))
-  .add(po.image().url("images/sorrow.jpg"))
+  .zoom(0)
+  .add(po.image().url("images/{Z}/{X}/{Y}.png"))
 .add(po.interact())
   .add(po.compass());
     </script>
